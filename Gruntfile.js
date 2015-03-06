@@ -45,11 +45,11 @@ module.exports = function (grunt) {
       options: {
         jshintrc: '.jshintrc'
       },
-      all: ['js/boom-functions.js']
+      all: ['js/functions.js']
     }, //jshint
     modernizr: {
       dist: {
-        "devFile" : 'remote',
+        "devFile" : "js/vendor/modernizr.custom.86229.js",
         "outputFile" : "js/vendor/modernizr-custom.js",
         "extra" : {
           "shiv" : false,
@@ -59,13 +59,13 @@ module.exports = function (grunt) {
           "cssclasses" : true
         },
         // Define any tests you want to implicitly include.
-        "tests" : [
-          'css_mediaqueries',
-          'rgba',
-          'touch',
-          'svg',
-          'csstransforms'
-        ],
+        // "tests" : [
+        //   'css_mediaqueries',
+        //   'rgba',
+        //   'touch',
+        //   'svg',
+        //   'csstransforms'
+        // ],
         "matchCommunityTests" : true,
         // This task will crawl all *.js, *.css, *.scss and *.sass files,
         // except files that are in node_modules/.

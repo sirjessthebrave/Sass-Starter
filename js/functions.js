@@ -1,3 +1,3 @@
 jQuery(document).ready(function ($) {
-  //console.log('jQuery ' + $().jquery + ' is firing.');
+  console.log('jQuery ' + $().jquery + ' is firing.');
 });

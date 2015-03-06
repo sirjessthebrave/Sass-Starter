@@ -136,6 +136,12 @@ img {
 @media \0screen {
   img {
     width: auto; } }
+@font-face {
+  font-family: 'icon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 html {
   font-size: 100%; }
 
@@ -170,9 +176,5 @@ sub {
 *:before,
 *:after {
   box-sizing: border-box; }
-
-.no-cssanimations body {
-  background-color: red;
-  color: yellow; }
 
 /*# sourceMappingURL=style.css.map */

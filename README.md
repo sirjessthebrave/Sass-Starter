@@ -19,5 +19,4 @@ To Do
 =====
 
 * Get LiveReload (or alternative) working
-* Play with KSS - http://warpspire.com/kss/ & http://mikefowler.me/2013/10/14/static-styleguides-kss-node/ & https://github.com/t32k/grunt-kss 
-* Create a "starter" icon font of frequently used icons (Facebook, Twitter, arrows, etc.)
+* Play with KSS - http://warpspire.com/kss/ & http://mikefowler.me/2013/10/14/static-styleguides-kss-node/ & https://github.com/t32k/grunt-kss
