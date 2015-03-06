@@ -1,0 +1,8 @@
+//It causes me physical pain...
+.visuallyhidden {
+  @extend %visuallyhidden;
+}
+
+.clearfix {
+  @extend %clearfix;
+}

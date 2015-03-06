@@ -1,0 +1,108 @@
+%clearfix{
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+%visuallyhidden{
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+%icon {
+  font-family: 'icon'; //declared in the typography partial
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+}
+
+%sans-serif {
+  font-family: 'Arial', sans-serif; //replace this with a webfont usually
+  // font-weight: 400;
+  // -webkit-font-smoothing: antialiased;
+}
+
+//maybe set a serif one if needed
+
+%bold {
+  font-weight: bold; //replace this with the appropriate number for whatever webfont you're using - usually 700
+}
+
+//might also need light, black, whatever
+
+%italic {
+  font-style: italic;
+}
+
+%list { //apply to a ul or ol for indented spacing since we undid it all in the reset
+  padding-left: 3em;
+  margin-bottom: 1em;
+
+  li {
+    margin-bottom: 1em;
+
+    &:before {
+      margin-left: -1.5em;
+      position: absolute;
+      // you can do fun things here like add a color or bold or something to your numbers/bullets
+    }
+
+    ul,
+    ol {
+      margin-top: 1em;
+      padding-left: 2em; //the spacing usually shouldn't be as drastic the second+ level deep
+    }
+  } //li
+} //list
+
+%bullets { //apply to a ul
+  @extend %list;
+
+  li:before {
+    content: '\2022'; //bullets
+  }
+} //bullets
+
+%numbers { //apply to an ol
+  @extend %list; 
+  counter-reset: li;
+
+  li:before {
+    content: counter(li)')'; //numbers
+    counter-increment: li;
+  }
+
+  ul li { //don't let uls nested inside ols keep acting like ols
+    &:before {
+      content: '\2022';
+      counter-increment: none;
+    }
+  }
+} //numbers
+
+%no-bullets { //if you need to override above fancy list styling
+  // you can use this to override %numbers too but I don't know why you would, and I still find no-bullets to be the most intuitive name
+  padding-left: 0 !important; //specificity is frequently an issue when we do this
+
+  li {
+    &:before {
+      content: '' !important; //specificity again
+    }
+  }
+} //no-bullets

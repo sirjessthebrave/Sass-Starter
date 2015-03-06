@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.visuallyhidden, .skip-link {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+input,
+textarea, body {
+  font-family: 'Arial', sans-serif; }
+
+.skip-link:focus, b,
+strong {
+  font-weight: bold; }
+
+i,
+em {
+  font-style: italic; }
+
+.main ul, .main ol {
+  padding-left: 3em;
+  margin-bottom: 1em; }
+  .main ul li, .main ol li {
+    margin-bottom: 1em; }
+    .main ul li:before, .main ol li:before {
+      margin-left: -1.5em;
+      position: absolute; }
+    .main ul li ul, .main ol li ul,
+    .main ul li ol,
+    .main ol li ol {
+      margin-top: 1em;
+      padding-left: 2em; }
+
+.main ul li:before {
+  content: '\2022'; }
+
+.main ol {
+  counter-reset: li; }
+  .main ol li:before {
+    content: counter(li) ")";
+    counter-increment: li; }
+  .main ol ul li:before {
+    content: '\2022';
+    counter-increment: none; }
+
+.skip-link:focus {
+  position: static;
+  display: block;
+  width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+
+input,
+textarea {
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  border: none;
+  vertical-align: top;
+  margin: 0;
+  max-width: 100%; }
+  input[type="checkbox"],
+  textarea[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    width: auto; }
+  input[type="radio"],
+  textarea[type="radio"] {
+    -webkit-appearance: radio;
+    width: auto; }
+
+fieldset {
+  min-width: 0 !important; }
+
+img {
+  max-width: 100% !important;
+  height: auto !important; }
+
+@media \0screen {
+  img {
+    width: auto; } }
+html {
+  font-size: 100%; }
+
+p {
+  margin-bottom: 1em; }
+
+sup {
+  position: relative;
+  font-size: .8em;
+  top: -.2em; }
+
+sub {
+  position: relative;
+  font-size: .8em;
+  top: .2em; }
+
+*:focus {
+  outline: none; }
+
+.movie-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 2em; }
+  .movie-wrapper iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.no-cssanimations body {
+  background-color: red;
+  color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

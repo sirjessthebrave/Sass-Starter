@@ -1,0 +1,10 @@
+img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+@media \0screen { //Prevent height distortion in IE8. 
+	img {
+		width: auto;
+	} 
+}
