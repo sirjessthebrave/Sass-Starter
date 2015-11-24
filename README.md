@@ -18,3 +18,4 @@ To Use
 Notes
 =======
 For icon fonts try https://icomoon.io/
+Questions on structuring Sass folders or making the code more organized - try: https://smacss.com/
