@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 # Sass and extensions.
-gem 'sass', '>=3.4.5'
+gem 'compass', '~>1.0.3'
+gem 'sass', '~>3.4.18'
+gem 'susy', '~>2.2.6'
+gem 'modular-scale', '~>2.1.1'
 
-# Dependency to prevent polling.
-gem 'rb-fsevent', :require => false # Mac OSX
