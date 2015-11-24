@@ -16,35 +16,44 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 .clearfix:before, .clearfix:after {
   content: "";
-  display: table; }
+  display: table;
+}
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 .visuallyhidden, .skip-link {
   border: 0;
@@ -54,45 +63,57 @@ table {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
 input,
 textarea, body {
-  font-family: 'Arial', sans-serif; }
+  font-family: 'Arial', sans-serif;
+}
 
 .skip-link:focus, b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 i,
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
 .main ul, .main ol {
   padding-left: 3em;
-  margin-bottom: 1em; }
-  .main ul li, .main ol li {
-    margin-bottom: 1em; }
-    .main ul li:before, .main ol li:before {
-      margin-left: -1.5em;
-      position: absolute; }
-    .main ul li ul, .main ol li ul,
-    .main ul li ol,
-    .main ol li ol {
-      margin-top: 1em;
-      padding-left: 2em; }
+  margin-bottom: 1em;
+}
+.main ul li, .main ol li {
+  margin-bottom: 1em;
+}
+.main ul li:before, .main ol li:before {
+  margin-left: -1.5em;
+  position: absolute;
+}
+.main ul li ul, .main ol li ul,
+.main ul li ol,
+.main ol li ol {
+  margin-top: 1em;
+  padding-left: 2em;
+}
 
 .main ul li:before {
-  content: '\2022'; }
+  content: '\2022';
+}
 
 .main ol {
-  counter-reset: li; }
-  .main ol li:before {
-    content: counter(li) ")";
-    counter-increment: li; }
-  .main ol ul li:before {
-    content: '\2022';
-    counter-increment: none; }
+  counter-reset: li;
+}
+.main ol li:before {
+  content: counter(li) ")";
+  counter-increment: li;
+}
+.main ol ul li:before {
+  content: '\2022';
+  counter-increment: none;
+}
 
 .skip-link:focus {
   position: static;
@@ -106,7 +127,8 @@ em {
   margin: auto;
   text-align: center;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+}
 
 input,
 textarea {
@@ -116,65 +138,86 @@ textarea {
   border: none;
   vertical-align: top;
   margin: 0;
-  max-width: 100%; }
-  input[type="checkbox"],
-  textarea[type="checkbox"] {
-    -webkit-appearance: checkbox;
-    width: auto; }
-  input[type="radio"],
-  textarea[type="radio"] {
-    -webkit-appearance: radio;
-    width: auto; }
+  max-width: 100%;
+}
+input[type="checkbox"],
+textarea[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  width: auto;
+}
+input[type="radio"],
+textarea[type="radio"] {
+  -webkit-appearance: radio;
+  width: auto;
+}
 
 fieldset {
-  min-width: 0 !important; }
+  min-width: 0 !important;
+}
 
 img {
   max-width: 100% !important;
-  height: auto !important; }
+  height: auto !important;
+}
 
 @media \0screen {
   img {
-    width: auto; } }
+    width: auto;
+  }
+}
 @font-face {
   font-family: 'icon';
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icon") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 html {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 sup {
   position: relative;
   font-size: .8em;
-  top: -.2em; }
+  top: -.2em;
+}
 
 sub {
   position: relative;
   font-size: .8em;
-  top: .2em; }
+  top: .2em;
+}
 
 *:focus {
-  outline: none; }
+  outline: none;
+}
 
 .movie-wrapper {
   overflow: hidden;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  margin-bottom: 2em; }
-  .movie-wrapper iframe {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
+  margin-bottom: 2em;
+}
+.movie-wrapper iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1225px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */

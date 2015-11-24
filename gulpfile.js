@@ -4,9 +4,9 @@ var gulp = require('gulp');
 // Include plugins
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-//var compass = require('gulp-compass');
+var compass = require('gulp-compass');
 var jshint = require('gulp-jshint');
-//var livereload = require('gulp-livereload');
+var livereload = require('gulp-livereload');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var notify = require('gulp-notify');
